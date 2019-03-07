@@ -1,5 +1,6 @@
 $main-blue: #0C3C59;
 $main-grey: white;
+$main-font: 'Questrial', sans-serif;
 
 *{
     box-sizing: border-box;
@@ -10,10 +11,14 @@ body{
     background-color: $main-blue;
     nav{
         background-color: $main-grey;
+        height: 65px;
+        font-family: $main-font;
+        font-size: 20px;
         .inner-nav{
             margin-left: 5px;
             margin-right: 5px;
             display: flex;
+            align-items: center;
             justify-content: space-between;
             .menu{
                 display: flex;
