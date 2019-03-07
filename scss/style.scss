@@ -14,10 +14,10 @@ body{
             margin-left: 5px;
             margin-right: 5px;
             display: flex;
+            justify-content: space-between;
             .menu{
                 display: flex;
                 color: $main-blue;
-                flex-flow: 3;
             }
         }
     }

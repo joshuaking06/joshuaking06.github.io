@@ -1,2 +1,2 @@
-*{box-sizing:border-box}body{margin:0;background-color:#0C3C59}body nav{background-color:#fff}body nav .inner-nav{margin-left:5px;margin-right:5px;display:flex}body nav .inner-nav .menu{display:flex;color:#0C3C59;flex-flow:3}
+*{box-sizing:border-box}body{margin:0;background-color:#0C3C59}body nav{background-color:#fff}body nav .inner-nav{margin-left:5px;margin-right:5px;display:flex;justify-content:space-between}body nav .inner-nav .menu{display:flex;color:#0C3C59}
 /*# sourceMappingURL=style.css.map */
