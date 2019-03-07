@@ -65,6 +65,7 @@ body{
         justify-content: space-evenly;
         .column{
             flex-grow: 1;
+            width: 50%;
             border: 1px solid black;
         }
     }
