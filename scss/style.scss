@@ -4,6 +4,7 @@ $main-font: 'Questrial', sans-serif;
 
 *{
     box-sizing: border-box;
+    font-family: $main-font;
 }
 
 body{
@@ -31,6 +32,40 @@ body{
                     color: $main-blue;
                 }
             }
+        }
+    }
+    .intro-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .intro-text{
+            padding-top: 15%;
+            height: 95vh;
+            color: $main-grey;
+            font-family: $main-font;
+            text-align: center;
+            h1{
+                font-size: 75px;
+                font-weight: 700;
+                margin-bottom: 0;
+            }
+            h3{
+                font-size: 40px;
+                font-weight: 400;
+            }
+        }
+    }
+    #about{
+        background-color: $main-grey;
+    }
+    .grid{
+        color: $main-blue;
+        display: flex;
+        height: 80vh;
+        justify-content: space-evenly;
+        .column{
+            flex-grow: 1;
+            border: 1px solid black;
         }
     }
 }
