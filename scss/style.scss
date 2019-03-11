@@ -1,80 +1,114 @@
-$main-blue: #0C3C59;
-$main-grey: #D3D3D3;
+$main-blue: #0c3c59;
+$main-grey: white;
 $main-font: 'Questrial', sans-serif;
 
-*{
-    box-sizing: border-box;
-    font-family: $main-font;
+* {
+	box-sizing: border-box;
+	font-family: $main-font;
 }
 
-body{
-    margin: 0;
-    background-color: $main-blue;
-    nav{
-        background-color: $main-grey;
-        height: 65px;
-        font-family: $main-font;
-        font-size: 20px;
-        .inner-nav{
-            margin-left: 5px;
-            margin-right: 5px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            .menu{
-                display: flex;
-                color: $main-blue;
-                width: 400px;
-                justify-content: space-evenly;
-                list-style-type: none;
-                a{
-                    text-decoration: none;
-                    color: $main-blue;
-                }
-            }
-        }
-    }
-    .intro-section{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        .intro-text{
-            padding-top: 15%;
-            height: 95vh;
-            color: $main-grey;
-            font-family: $main-font;
-            text-align: center;
-            h1{
-                font-size: 75px;
-                font-weight: 700;
-                margin-bottom: 0;
-            }
-            h3{
-                font-size: 40px;
-                font-weight: 400;
-            }
-        }
-    }
-    #about{
-        background-color: $main-grey;
-    }
-    .grid{
-        color: $main-blue;
-        display: flex;
-        height: 80vh;
-        justify-content: space-evenly;
-        .column{
-            flex-grow: 1;
-            width: 50%;
-        }
-        :first-child{
-            border-right: 3px solid black;
-            background-color: $main-blue;
-            color: $main-grey;
-        }
-        :last-child{
-            background-color: $main-grey;
-            color: $main-blue;
-        }
-    }
+body {
+	margin: 0;
+	background-color: $main-blue;
+	nav {
+		background-color: $main-grey;
+		height: 65px;
+		font-family: $main-font;
+		font-size: 20px;
+		.inner-nav {
+			margin-left: 5px;
+			margin-right: 5px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			.menu {
+				display: flex;
+				color: $main-blue;
+				width: 400px;
+				justify-content: space-evenly;
+				list-style-type: none;
+				a {
+					text-decoration: none;
+					color: $main-blue;
+				}
+			}
+		}
+	}
+	.intro-section {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.intro-text {
+			padding-top: 15%;
+			height: 95vh;
+			color: $main-grey;
+			font-family: $main-font;
+			text-align: center;
+			h1 {
+				font-size: 75px;
+				font-weight: 700;
+				margin-bottom: 0;
+			}
+			h3 {
+				font-size: 40px;
+				font-weight: 400;
+			}
+		}
+	}
+	#about {
+		background-color: $main-grey;
+	}
+	.grid {
+		color: $main-blue;
+		display: flex;
+		height: 80vh;
+		justify-content: space-evenly;
+		.column {
+			flex-grow: 1;
+			width: 50%;
+		}
+		:first-child {
+			background-color: $main-grey;
+			color: $main-blue;
+			height: 80vh;
+		}
+		:last-child {
+			background-color: $main-blue;
+			height: 80vh;
+		}
+		.tab-right {
+			padding-right: 10%;
+		}
+
+		.content-right {
+			background-color: $main-grey;
+			color: $main-blue;
+			height: 50%;
+			width: 75%;
+			margin-top: 20%;
+			padding-top: 10px;
+		}
+		.content-left {
+			background-color: $main-blue;
+			color: $main-grey;
+			height: 50%;
+			width: 75%;
+			margin-top: 20%;
+			padding-top: 10px;
+			margin-left: auto;
+		}
+
+		.title-left {
+			padding-top: 10%;
+			height: 40vh;
+			background-color: $main-grey;
+			color: $main-blue;
+		}
+		.title-right {
+			padding-top: 10%;
+			height: 40vh;
+			background-color: $main-blue;
+			color: $main-grey;
+		}
+	}
 }
