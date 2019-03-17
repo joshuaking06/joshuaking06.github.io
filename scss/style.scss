@@ -1,4 +1,5 @@
-$main-blue: #0c3c59;
+$main-blue: #41b3a3;
+$blue-font: white;
 $main-grey: white;
 $main-font: 'Questrial', sans-serif;
 
@@ -23,13 +24,13 @@ body {
 			justify-content: space-between;
 			.menu {
 				display: flex;
-				color: $main-blue;
+				color: $blue-font;
 				width: 400px;
 				justify-content: space-evenly;
 				list-style-type: none;
 				a {
 					text-decoration: none;
-					color: $main-blue;
+					color: $blue-font;
 				}
 			}
 		}
@@ -41,7 +42,7 @@ body {
 		.intro-text {
 			padding-top: 15%;
 			height: 95vh;
-			color: $main-grey;
+			color: $blue-font;
 			font-family: $main-font;
 			text-align: center;
 			h1 {
@@ -59,7 +60,7 @@ body {
 		background-color: $main-grey;
 	}
 	.grid {
-		color: $main-blue;
+		color: $blue-font;
 		display: flex;
 		height: 80vh;
 		justify-content: space-evenly;
@@ -69,7 +70,7 @@ body {
 		}
 		:first-child {
 			background-color: $main-grey;
-			color: $main-blue;
+			color: $blue-font;
 			height: 80vh;
 		}
 		:last-child {
@@ -82,7 +83,7 @@ body {
 
 		.content-right {
 			background-color: $main-grey;
-			color: $main-blue;
+			color: $blue-font;
 			height: 50%;
 			width: 75%;
 			margin-top: 20%;
@@ -90,7 +91,7 @@ body {
 		}
 		.content-left {
 			background-color: $main-blue;
-			color: $main-grey;
+			color: $blue-font;
 			height: 50%;
 			width: 75%;
 			margin-top: 20%;
@@ -102,13 +103,13 @@ body {
 			padding-top: 10%;
 			height: 40vh;
 			background-color: $main-grey;
-			color: $main-blue;
+			color: $blue-font;
 		}
 		.title-right {
 			padding-top: 10%;
 			height: 40vh;
 			background-color: $main-blue;
-			color: $main-grey;
+			color: $blue-font;
 		}
 	}
 }
