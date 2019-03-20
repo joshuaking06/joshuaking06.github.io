@@ -11,6 +11,10 @@ $main-font: 'Questrial', sans-serif;
 body {
 	margin: 0;
 	background-color: $main-blue;
+	section {
+		display: flex;
+		align-items: center;
+	}
 	nav {
 		background-color: $main-grey;
 		height: 65px;
@@ -56,60 +60,95 @@ body {
 			}
 		}
 	}
-	#about {
-		background-color: $main-grey;
-	}
 	.grid {
+		width: 85%;
+		margin: auto;
+		&.hidden {
+			display: none;
+		}
 		color: $blue-font;
-		display: flex;
+		&.visible {
+			display: flex;
+			align-items: center;
+		}
 		height: 80vh;
-		justify-content: space-evenly;
+		justify-content: space-around;
 		.column {
 			flex-grow: 1;
 			width: 50%;
+			.project-image {
+				width: 90%;
+				height: auto;
+			}
 		}
-		:first-child {
-			background-color: $main-grey;
-			color: $blue-font;
-			height: 80vh;
-		}
-		:last-child {
-			background-color: $main-blue;
-			height: 80vh;
-		}
-		.tab-right {
-			padding-right: 10%;
-		}
+	}
+}
 
-		.content-right {
-			background-color: $main-grey;
-			color: $blue-font;
-			height: 50%;
-			width: 75%;
-			margin-top: 20%;
-			padding-top: 10px;
-		}
-		.content-left {
-			background-color: $main-blue;
-			color: $blue-font;
-			height: 50%;
-			width: 75%;
-			margin-top: 20%;
-			padding-top: 10px;
-			margin-left: auto;
-		}
+// arrows----------------------------------------------------------------------------------------------
 
-		.title-left {
-			padding-top: 10%;
-			height: 40vh;
-			background-color: $main-grey;
-			color: $blue-font;
-		}
-		.title-right {
-			padding-top: 10%;
-			height: 40vh;
-			background-color: $main-blue;
-			color: $blue-font;
+#arrow_1 .arrow {
+	$size: 40px;
+	$width: 3px;
+	margin-left: 35px;
+	margin-right: 35px;
+
+	cursor: pointer;
+	display: block;
+	width: $size / 1.414;
+	height: $size / 1.414 * 2;
+	position: relative;
+
+	& span,
+	&:before,
+	&:after {
+		background: #fff;
+		content: '';
+		display: block;
+		width: $size;
+		height: $width;
+		position: absolute;
+		top: calc(50% - (#{$width} / 2));
+	}
+
+	&:before {
+		transform: rotate(-45deg);
+	}
+	&:after {
+		transform: rotate(45deg);
+	}
+
+	& span {
+		width: 0;
+	}
+	&:hover span {
+		width: $size * 1.414;
+	}
+
+	@each $direction in 'left' 'right' {
+		&.arrow--#{$direction} {
+			& span,
+			&:before,
+			&:after {
+				#{$direction}: 0;
+				transform-origin: #{$direction} 50%;
+			}
+
+			&:before,
+			&:after {
+				transition: #{$direction} 0.3s 0.05s;
+			}
+
+			& span {
+				transition: width 0.3s, #{$direction} 0.3s 0.05s;
+			}
+
+			&:hover {
+				& span,
+				&:before,
+				&:after {
+					#{$direction}: $size / 1.414 * -1;
+				}
+			}
 		}
 	}
 }

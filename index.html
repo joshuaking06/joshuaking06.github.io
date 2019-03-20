@@ -4,19 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Joshua King | Web Developer</title>
-    <script src="app.js" charset="utf-8"></script>
     <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <main>  
       <header>
-        <!-- navbar -->
         <nav id="nav">
           <div class="inner-nav">
             <span>Logo</span>
             <ul class="menu">
-              <li><a href="#about"> About </a></li>
+              <li><a href="#my-work"> About </a></li>
               <li><a href="#"> Technologies </a></li>
               <li><a href="#"> Projects </a></li>
               <li><a href="#"> Contact </a></li>
@@ -32,39 +30,45 @@
         </div>
       </section>
 
-      <section id="about">
-        <div class="grid">
+      <section id="arrow_1">
+        <div id='left' class="arrow arrow--left">
+          <span></span>
+        </div>
+
+        <div class="grid visible projects">
           <div class="column">
-            <h1 class="title-left"> About Me</h1>
+              <img class="project-image" src="https://user-images.githubusercontent.com/43890120/51030274-cc629f00-1590-11e9-980b-48d173ebb1df.png" alt="project-one-picture">
           </div>
           <div class="column">
-            <div class="tab-right content-right">
-              I decided to make the career change to become a web developer in order to push myself and give 
-              myself the creativity to build amazing things using only my two hands and a computer. 
-              Since a young age, I had always enjoyed the aspect of coding and technology in general, 
-              so after some deliberation and discussion with my friends in the industry, I decided to finally 
-              make the jump into coding by joining General Assembly, and I couldn’t be happier. 
+            <div class="project-desc">
+              My first project three weeks into the course at GA was grid based battleship game, 
+              worked on over seven days for a solo project. I used jQuery to manipulate much of the game board, 
+              and used CSS/SCSS along with HTML audio to give the game a unique style.
+              <p class="project-tech"> Tech Used: HTML/CSS, SCSS, JavaScript, jQuery </p>
             </div>
           </div>
+        </div>
+
+        <div class="grid projects hidden">
+          <div class="column">
+              <img class="project-image" src="https://user-images.githubusercontent.com/43890120/51030274-cc629f00-1590-11e9-980b-48d173ebb1df.png" alt="project-one-picture">
+          </div>
+          <div class="column">
+            <div class="project-desc">
+              My second project three weeks into the course at GA was grid based battleship game, 
+              worked on over seven days for a solo project. I used jQuery to manipulate much of the game board, 
+              and used CSS/SCSS along with HTML audio to give the game a unique style.
+              <p class="project-tech"> Tech Used: HTML/CSS, SCSS, JavaScript, jQuery </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="right" class="arrow arrow--right">
+          <span></span>
         </div>
       </section>
 
-      <section id="about">
-        <div class="grid">
-          <div class="column">
-            <div class="tab-left content-left">
-              I decided to make the career change to become a web developer in order to push myself and give 
-              myself the creativity to build amazing things using only my two hands and a computer. 
-              Since a young age, I had always enjoyed the aspect of coding and technology in general, 
-              so after some deliberation and discussion with my friends in the industry, I decided to finally 
-              make the jump into coding by joining General Assembly, and I couldn’t be happier. 
-            </div>
-          </div>
-          <div class="column">
-            <h1 class='title-right'>About Me</h1>
-          </div>
-        </div>
-      </section>
+      
 
       
 
@@ -79,5 +83,6 @@
 
 
     </main>
+    <script src="app.js" charset="utf-8"></script>
   </body>
 </html>
