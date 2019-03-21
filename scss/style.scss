@@ -111,7 +111,6 @@ body {
 					display: flex;
 					flex-direction: column;
 					color: $green;
-					height: 60px;
 					width: 30%;
 					margin-bottom: 4px;
 					text-align: center;
@@ -120,7 +119,6 @@ body {
 					i {
 						padding-bottom: 4px;
 						font-size: 30px;
-						display: inline-block;
 					}
 				}
 			}
@@ -132,6 +130,10 @@ body {
 			}
 			&.desc {
 				width: 45%;
+			}
+			.about-image {
+				width: 90%;
+				height: auto;
 			}
 			.project-image {
 				width: 90%;
@@ -253,7 +255,11 @@ hr {
 // media queries
 @media only screen and (max-width: 600px) {
 	body {
+		section {
+			height: auto;
+		}
 		.grid {
+			height: auto;
 			.column {
 				width: 100% !important;
 			}
