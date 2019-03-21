@@ -1,6 +1,6 @@
 $main-blue: #41b3a3;
-$blue-font: darkblue;
-$main-grey: white;
+$font: white;
+$main-grey: #595959;
 $main-font: 'Questrial', sans-serif;
 
 * {
@@ -10,7 +10,6 @@ $main-font: 'Questrial', sans-serif;
 
 body {
 	margin: 0;
-	background-color: $main-blue;
 	section {
 		display: flex;
 		align-items: center;
@@ -18,7 +17,7 @@ body {
 	nav {
 		background-color: $main-grey;
 		height: 65px;
-		font-family: $main-font;
+		font-family: $main-blue;
 		font-size: 20px;
 		.inner-nav {
 			margin-left: 5px;
@@ -28,33 +27,37 @@ body {
 			justify-content: space-between;
 			.menu {
 				display: flex;
-				color: $blue-font;
+				color: $font;
 				width: 400px;
 				justify-content: space-evenly;
 				list-style-type: none;
 				a {
 					text-decoration: none;
-					color: $blue-font;
+					color: $font;
 				}
 			}
 		}
 	}
 	.intro-section {
+		background-image: url('../assets/welcome3.png');
+		background-size: cover;
+		background-repeat: no-repeat;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		.intro-text {
 			padding-top: 15%;
 			height: 95vh;
-			color: $blue-font;
 			font-family: $main-font;
 			text-align: center;
 			h1 {
+				color: $main-grey;
 				font-size: 75px;
 				font-weight: 700;
 				margin-bottom: 0;
 			}
 			h3 {
+				color: $main-grey;
 				font-size: 40px;
 				font-weight: 400;
 			}
@@ -66,7 +69,7 @@ body {
 		&.hidden {
 			display: none;
 		}
-		color: $blue-font;
+		color: $font;
 		&.visible {
 			display: flex;
 			align-items: center;
