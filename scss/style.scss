@@ -56,6 +56,7 @@ body {
 		align-items: center;
 		justify-content: center;
 		width: 100%;
+		margin-bottom: 5%;
 		.intro-text {
 			padding-top: 10%;
 			height: 95vh;
@@ -75,6 +76,13 @@ body {
 			}
 		}
 	}
+	#skills-section {
+		.grid {
+			.column {
+				width: 33%;
+			}
+		}
+	}
 	.grid {
 		width: 80%;
 		margin: auto;
@@ -84,11 +92,35 @@ body {
 			width: 0;
 		}
 		color: $green;
+		flex-wrap: wrap;
 		display: flex;
 		align-items: center;
-		justify-content: space-around;
+		justify-content: space-evenly;
+		text-align: center;
 		.column {
-			flex-grow: 1;
+			.skills {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				list-style-type: none;
+				padding: 0 20px;
+				margin: 0px;
+				justify-content: space-between;
+				li {
+					display: flex;
+					flex-direction: column;
+					color: $green;
+					height: 60px;
+					width: 30%;
+					text-align: center;
+					align-items: center;
+					justify-content: center;
+					i {
+						font-size: 30px;
+						display: inline-block;
+					}
+				}
+			}
 			&.image {
 				width: 55%;
 				img {
@@ -112,6 +144,15 @@ hr {
 	width: 100%;
 	background-position: 50%;
 	box-sizing: border-box;
+}
+
+.fade {
+	border-width: 0 0 1px;
+	$color: $green;
+	color: $color;
+	border-image: linear-gradient(90deg, rgba($color, 0), rgba($color, 1) 50%, rgba($color, 0) 100%)
+		0 0 100%;
+	border-style: solid;
 }
 .shine {
 	height: 20px;
@@ -206,52 +247,13 @@ hr {
 		}
 	}
 }
-
-// sliding animations----------------------------------------------------------------------------
-// .slide-in-right {
-// 	animation: slide-in 0.5s forwards;
-// 	-webkit-animation: slide-in 0.5s forwards;
-// }
-
-// .slide-out-right {
-// 	animation: slide-out 0.5s forwards;
-// 	-webkit-animation: slide-out 0.5s forwards;
-// }
-// .slide-in-left {
-// 	animation: slide-in 0.5s backwards;
-// 	-webkit-animation: slide-in 0.5s backwards;
-// }
-
-// .slide-out-left {
-// 	animation: slide-out 0.5s backwards;
-// 	-webkit-animation: slide-out 0.5s backwards;
-// }
-// @keyframes slide-in {
-// 	100% {
-// 		transform: translateX(0%);
-// 	}
-// }
-
-// @-webkit-keyframes slide-in {
-// 	100% {
-// 		-webkit-transform: translateX(0%);
-// 	}
-// }
-
-// @keyframes slide-out {
-// 	0% {
-// 		transform: translateX(0%);
-// 	}
-// 	100% {
-// 		transform: translateX(-100%);
-// 	}
-// }
-
-// @-webkit-keyframes slide-out {
-// 	0% {
-// 		-webkit-transform: translateX(0%);
-// 	}
-// 	100% {
-// 		-webkit-transform: translateX(-100%);
-// 	}
-// }
+// media queries
+@media only screen and (max-width: 600px) {
+	body {
+		.grid {
+			.column {
+				width: 100% !important;
+			}
+		}
+	}
+}
