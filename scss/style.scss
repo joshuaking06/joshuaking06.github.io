@@ -57,6 +57,7 @@ body {
 		justify-content: center;
 		width: 100%;
 		margin-bottom: 5%;
+		height: 90vh;
 		.intro-text {
 			padding-top: 10%;
 			height: 95vh;
@@ -112,10 +113,12 @@ body {
 					color: $green;
 					height: 60px;
 					width: 30%;
+					margin-bottom: 4px;
 					text-align: center;
 					align-items: center;
 					justify-content: center;
 					i {
+						padding-bottom: 4px;
 						font-size: 30px;
 						display: inline-block;
 					}
