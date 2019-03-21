@@ -2,6 +2,16 @@ let current = 0
 const projects = document.querySelectorAll('.projects')
 const arrows = document.querySelectorAll('.arrow')
 
+document.querySelectorAll('a').forEach((anchor) => {
+	anchor.addEventListener('click', function(e) {
+		e.preventDefault()
+
+		document.querySelector(this.getAttribute('href')).scrollIntoView({
+			behavior: 'smooth'
+		})
+	})
+})
+
 arrows.forEach((arrow) => {
 	arrow.addEventListener('click', (e) => {
 		projects[current].classList.toggle('hidden')

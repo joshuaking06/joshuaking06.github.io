@@ -10,8 +10,19 @@ $main-font: 'Questrial', sans-serif;
 body {
 	margin: 0;
 	section {
+		width: 90%;
 		display: flex;
+		flex-wrap: wrap;
+		margin: auto;
 		align-items: center;
+		height: 80vh;
+		.section-header {
+			text-align: center;
+			width: 100%;
+			font-size: 3.5em;
+			text-transform: uppercase;
+			letter-spacing: 0.5em;
+		}
 	}
 	nav {
 		background-color: $green;
@@ -19,15 +30,15 @@ body {
 		font-family: $main-font;
 		font-size: 20px;
 		.inner-nav {
-			margin-left: 5px;
-			margin-right: 5px;
+			margin-left: 10px;
+			margin-right: 10px;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
 			.menu {
 				display: flex;
 				color: white;
-				width: 400px;
+				width: 500px;
 				justify-content: space-evenly;
 				list-style-type: none;
 				a {
@@ -44,6 +55,7 @@ body {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		width: 100%;
 		.intro-text {
 			padding-top: 10%;
 			height: 95vh;
@@ -64,7 +76,7 @@ body {
 		}
 	}
 	.grid {
-		width: 85%;
+		width: 80%;
 		margin: auto;
 		&.hidden {
 			opacity: 0;
@@ -74,7 +86,6 @@ body {
 		color: $green;
 		display: flex;
 		align-items: center;
-		height: 80vh;
 		justify-content: space-around;
 		.column {
 			flex-grow: 1;
@@ -97,7 +108,7 @@ body {
 
 // arrows
 
-#arrow_1 .arrow {
+#my-work .arrow {
 	$size: 40px;
 	$width: 3px;
 	margin-left: 35px;
