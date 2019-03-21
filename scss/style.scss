@@ -1,5 +1,5 @@
 $main-blue: #41b3a3;
-$blue-font: white;
+$blue-font: darkblue;
 $main-grey: white;
 $main-font: 'Questrial', sans-serif;
 
@@ -75,7 +75,12 @@ body {
 		justify-content: space-around;
 		.column {
 			flex-grow: 1;
-			width: 50%;
+			&.image {
+				width: 55%;
+			}
+			&.desc {
+				width: 45%;
+			}
 			.project-image {
 				width: 90%;
 				height: auto;
@@ -84,7 +89,7 @@ body {
 	}
 }
 
-// arrows----------------------------------------------------------------------------------------------
+// arrows
 
 #arrow_1 .arrow {
 	$size: 40px;
@@ -150,5 +155,53 @@ body {
 				}
 			}
 		}
+	}
+}
+// sliding animations
+.slide-in-right {
+	animation: slide-in 0.5s forwards;
+	-webkit-animation: slide-in 0.5s forwards;
+}
+
+.slide-out-right {
+	animation: slide-out 0.5s forwards;
+	-webkit-animation: slide-out 0.5s forwards;
+}
+.slide-in-left {
+	animation: slide-in 0.5s backwards;
+	-webkit-animation: slide-in 0.5s backwards;
+}
+
+.slide-out-left {
+	animation: slide-out 0.5s backwards;
+	-webkit-animation: slide-out 0.5s backwards;
+}
+@keyframes slide-in {
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+@-webkit-keyframes slide-in {
+	100% {
+		-webkit-transform: translateX(0%);
+	}
+}
+
+@keyframes slide-out {
+	0% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+@-webkit-keyframes slide-out {
+	0% {
+		-webkit-transform: translateX(0%);
+	}
+	100% {
+		-webkit-transform: translateX(-100%);
 	}
 }
