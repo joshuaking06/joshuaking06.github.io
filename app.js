@@ -15,6 +15,7 @@ document.querySelectorAll('a').forEach((anchor) => {
 arrows.forEach((arrow) => {
 	arrow.addEventListener('click', (e) => {
 		projects[current].classList.toggle('hidden')
+		projects[current].style.transition = 'none'
 		changeCurrent(e.target.id)
 		changeProject(current)
 	})
@@ -28,4 +29,5 @@ const changeCurrent = (direction) => {
 
 const changeProject = (current) => {
 	projects[current].classList.toggle('hidden')
+	projects[current].style.transition = 'opacity .5s linear'
 }
