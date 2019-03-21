@@ -1,6 +1,6 @@
 $main-blue: #41b3a3;
-$font: white;
-$main-grey: #595959;
+$font: #003300;
+$main-grey: #003300;
 $main-font: 'Questrial', sans-serif;
 
 * {
@@ -27,13 +27,13 @@ body {
 			justify-content: space-between;
 			.menu {
 				display: flex;
-				color: $font;
+				color: white;
 				width: 400px;
 				justify-content: space-evenly;
 				list-style-type: none;
 				a {
 					text-decoration: none;
-					color: $font;
+					color: white;
 				}
 			}
 		}
@@ -46,11 +46,12 @@ body {
 		align-items: center;
 		justify-content: center;
 		.intro-text {
-			padding-top: 15%;
+			padding-top: 10%;
 			height: 95vh;
 			font-family: $main-font;
 			text-align: center;
 			h1 {
+				text-transform: uppercase;
 				color: $main-grey;
 				font-size: 75px;
 				font-weight: 700;
@@ -109,7 +110,7 @@ body {
 	& span,
 	&:before,
 	&:after {
-		background: #fff;
+		background: #003300;
 		content: '';
 		display: block;
 		width: $size;
