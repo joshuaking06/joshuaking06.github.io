@@ -19,6 +19,7 @@ body {
 		align-items: center;
 		height: 85vh;
 		.section-header {
+			text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
 			text-align: center;
 			width: 100%;
 			font-size: 3.5em;
@@ -71,6 +72,7 @@ body {
 			font-family: $header-font;
 			text-align: center;
 			h1 {
+				text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
 				text-transform: uppercase;
 				color: $green;
 				font-size: 70px;
@@ -78,6 +80,7 @@ body {
 				margin-bottom: 0;
 			}
 			h3 {
+				text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
 				color: $green;
 				font-size: 35px;
 				font-weight: 400;
@@ -90,6 +93,7 @@ body {
 		height: 30vh;
 		padding-bottom: 10%;
 		i {
+			text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
 			font-size: 70px;
 			padding-left: 20px;
 			color: $green;
