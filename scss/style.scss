@@ -440,6 +440,19 @@ hr {
 			}
 			height: auto;
 		}
+		#my-work {
+			.grid {
+				min-width: 90%;
+				margin: auto;
+				padding-bottom: 10px;
+			}
+			#left {
+				display: none;
+			}
+			#right {
+				display: none;
+			}
+		}
 		.grid {
 			height: auto;
 			.column {
