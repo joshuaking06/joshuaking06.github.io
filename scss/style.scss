@@ -130,6 +130,7 @@ body {
 				text-decoration: none;
 				i {
 					font-size: 35px;
+					text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
 				}
 				&:hover {
 					color: blue;
@@ -156,6 +157,7 @@ body {
 					i {
 						padding-bottom: 4px;
 						font-size: 30px;
+						text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
 					}
 				}
 			}
