@@ -3,7 +3,7 @@ const projects = document.querySelectorAll('.projects')
 const arrows = document.querySelectorAll('.arrow')
 
 // smooth scroll effect
-document.querySelectorAll('a').forEach((anchor) => {
+document.querySelectorAll('nav-links').forEach((anchor) => {
 	anchor.addEventListener('click', function(e) {
 		e.preventDefault()
 
