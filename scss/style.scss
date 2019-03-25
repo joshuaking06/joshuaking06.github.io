@@ -445,6 +445,11 @@ hr {
 				min-width: 90%;
 				margin: auto;
 				padding-bottom: 10px;
+				&.hidden {
+					height: auto;
+					width: 90%;
+					opacity: 1;
+				}
 			}
 			#left {
 				display: none;
