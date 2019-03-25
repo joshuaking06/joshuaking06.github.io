@@ -2,17 +2,6 @@ let current = 0
 const projects = document.querySelectorAll('.projects')
 const arrows = document.querySelectorAll('.arrow')
 
-// smooth scroll effect
-document.querySelectorAll('nav-links').forEach((anchor) => {
-	anchor.addEventListener('click', function(e) {
-		e.preventDefault()
-
-		document.querySelector(this.getAttribute('href')).scrollIntoView({
-			behavior: 'smooth'
-		})
-	})
-})
-
 // when you click the arrows
 arrows.forEach((arrow) => {
 	arrow.addEventListener('click', (e) => {
@@ -21,6 +10,10 @@ arrows.forEach((arrow) => {
 		changeCurrent(e.target.id)
 		changeProject(current)
 	})
+})
+
+document.querySelector('.hamburger--spring').addEventListener('click', (e) => {
+	e.currentTarget.classList.toggle('is-active')
 })
 
 // changing the current project to show
