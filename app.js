@@ -14,6 +14,7 @@ arrows.forEach((arrow) => {
 
 document.querySelector('.hamburger--spring').addEventListener('click', (e) => {
 	e.currentTarget.classList.toggle('is-active')
+	document.querySelector('.menu').classList.toggle('open')
 })
 
 // changing the current project to show

@@ -389,8 +389,32 @@ hr {
 			background: url(../assets/welcome3.png) no-repeat center center;
 			padding-top: 15%;
 		}
+		nav {
+			.inner-nav {
+				display: flex;
+				flex-wrap: wrap;
+				.menu {
+					display: none;
+					&.open {
+						display: flex;
+						flex-wrap: wrap;
+						position: relative;
+						li {
+							width: 100%;
+							display: block;
+							background-color: $green;
+							color: white;
+						}
+					}
+				}
+			}
+		}
 		.hamburger {
 			display: inline-block !important;
+			&.is-active {
+				display: block;
+				height: auto;
+			}
 		}
 		section {
 			.section-header {
