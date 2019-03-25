@@ -393,16 +393,35 @@ hr {
 			.inner-nav {
 				display: flex;
 				flex-wrap: wrap;
+				padding-left: 1px;
+				padding-right: 1px;
 				.menu {
-					display: none;
+					height: 0;
+					width: 0;
+					opacity: 0;
+					overflow: hidden;
+					li {
+						height: 0;
+						opacity: 0;
+					}
 					&.open {
-						display: flex;
+						padding-left: none;
+						height: auto;
+						width: 100%;
+						opacity: 1;
 						flex-wrap: wrap;
 						position: relative;
+						text-align: left;
 						li {
+							height: 40px;
 							width: 100%;
+							opacity: 1;
+							transition: all .66s ease-in-out;
+							padding-top: 6px;
 							display: block;
 							background-color: $green;
+							font-size: 26px;
+							border-bottom: 2px solid white;
 							color: white;
 						}
 					}
@@ -413,7 +432,6 @@ hr {
 			display: inline-block !important;
 			&.is-active {
 				display: block;
-				height: auto;
 			}
 		}
 		section {
