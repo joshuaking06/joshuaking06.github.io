@@ -57,20 +57,20 @@ body {
 		}
 	}
 	.intro-section {
-		background-image: url('../assets/welcome3.png');
-		background-size: cover;
-		background-repeat: no-repeat;
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		// background-image: url('../assets/welcome3.png');
+		// background-size: cover;
+		// background-repeat: no-repeat;
+		background: linear-gradient(20deg, white, 50%, $green 50%);
 		width: 100%;
 		margin-bottom: 5%;
 		height: 90vh;
 		.intro-text {
-			padding-top: 10%;
 			height: 95vh;
+			padding-top: 25%;
+			padding-left: 50px;
 			font-family: $header-font;
 			text-align: center;
+			align-self: flex-end;
 			h1 {
 				text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
 				text-transform: uppercase;
@@ -392,8 +392,12 @@ hr {
 @media only screen and (max-width: 600px) {
 	body {
 		.intro-section {
-			background: url(../assets/welcome3.png) no-repeat center center;
-			padding-top: 15%;
+			display: flex;
+			justify-content: center;
+			background: linear-gradient(25deg, white, 70%, $green 70%);
+			.intro-text {
+				padding-top: 40%;
+			}
 		}
 		nav {
 			.inner-nav {
