@@ -391,6 +391,18 @@ hr {
 }
 
 // media queries
+@media only screen and (max-width: 1000px) {
+	body {
+		.intro-section {
+			display: flex;
+			background: linear-gradient(25deg, white, 70%, $green 70%);
+			.intro-text {
+				padding-left: 20px;
+				padding-top: 35%;
+			}
+		}
+	}
+}
 @media only screen and (max-width: 600px) {
 	body {
 		.intro-section {
