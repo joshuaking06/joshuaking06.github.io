@@ -6,9 +6,10 @@ const arrows = document.querySelectorAll('.arrow')
 arrows.forEach((arrow) => {
 	arrow.addEventListener('click', (e) => {
 		projects[current].classList.toggle('hidden')
+		projects[current].classList.remove('animated', 'slideInRight', 'slideInLeft')
 		projects[current].style.transition = 'none'
-		changeCurrent(e.target.id)
-		changeProject(current)
+		changeCurrent(e.currentTarget.id)
+		changeProject(current, e.currentTarget.id)
 	})
 })
 
@@ -25,7 +26,13 @@ const changeCurrent = (direction) => {
 }
 
 // showing the newly selected project
-const changeProject = (current) => {
+const changeProject = (current, direction) => {
+	console.log(direction)
 	projects[current].classList.toggle('hidden')
-	projects[current].style.transition = 'opacity .5s linear'
+	if (direction === 'left') {
+		projects[current].classList.add('animated', 'slideInLeft')
+	} else {
+		projects[current].classList.add('animated', 'slideInRight')
+	}
+	// projects[current].style.transition = 'opacity .5s linear'
 }
