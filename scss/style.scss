@@ -67,7 +67,7 @@ body {
 		z-index: 1;
 		height: 90vh;
 		.intro-text {
-			z-index: 1;
+			animation: fadein 2.3s;
 			height: 95vh;
 			padding-top: 25%;
 			padding-left: 50px;
@@ -476,5 +476,14 @@ hr {
 				width: 100% !important;
 			}
 		}
+	}
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
 	}
 }
