@@ -64,8 +64,10 @@ body {
 		background-attachment: fixed;
 		width: 100%;
 		margin-bottom: 5%;
+		z-index: 1;
 		height: 90vh;
 		.intro-text {
+			z-index: 1;
 			height: 95vh;
 			padding-top: 25%;
 			padding-left: 50px;
