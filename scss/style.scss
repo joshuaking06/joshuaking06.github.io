@@ -61,6 +61,7 @@ body {
 		// background-size: cover;
 		// background-repeat: no-repeat;
 		background: linear-gradient(20deg, white, 50%, $green 50%);
+		background-attachment: fixed;
 		width: 100%;
 		margin-bottom: 5%;
 		height: 90vh;
@@ -70,7 +71,6 @@ body {
 			padding-left: 50px;
 			font-family: $header-font;
 			text-align: center;
-			align-self: flex-end;
 			h1 {
 				text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
 				text-transform: uppercase;
@@ -393,9 +393,9 @@ hr {
 	body {
 		.intro-section {
 			display: flex;
-			justify-content: center;
 			background: linear-gradient(25deg, white, 70%, $green 70%);
 			.intro-text {
+				padding-left: 0 !important;
 				padding-top: 40%;
 			}
 		}
