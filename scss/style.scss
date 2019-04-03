@@ -37,6 +37,7 @@ body {
 		font-size: 20px;
 		.inner-nav {
 			position: fixed;
+			z-index: 1;
 			background-color: $green;
 			padding-left: 10px;
 			padding-right: 10px;
